@@ -284,15 +284,15 @@ if global_specs['train']:
 if global_specs['analysis']:
     plot_specs['mcmc_steps'] = 1
     
-    # gcvis.allProfiles(['normal', 'glorot'], ['greedy', 'iterative'], plot_specs, metrics = ['readout', 'cost'])
+    gcvis.allProfiles(['normal', 'glorot'], ['greedy', 'iterative'], plot_specs, metrics = ['readout', 'cost'])
     
-    # for scheme in ['normal', 'glorot']:
-    #   plot_specs['scheme'] = scheme
-    #   print('Scheme: {}'.format(scheme))
-    #   for loop in [1]:
-    #       plot_specs['loops'] = loop
-    #       utls.MSE_averages(dataset.GetXtest(), dataset.GetYtest(), plot_specs)
-    #   #end
+    for scheme in ['normal', 'glorot']:
+      plot_specs['scheme'] = scheme
+      print('Scheme: {}'.format(scheme))
+      for loop in [1]:
+          plot_specs['loops'] = loop
+          utls.MSE_averages(dataset.GetXtest(), dataset.GetYtest(), plot_specs)
+      #end
     
     for scheme in ['normal']:
         plot_specs['scheme'] = scheme
