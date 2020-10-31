@@ -43,16 +43,11 @@ if dataset_id == 'mnist': layers = [dataset.GetNfeats(), 500, 500, 2000]
 if dataset_id == 'sz':    layers = [dataset.GetNfeats(), 80, 400]
 
 train_specs = {'epochs'           : 100 if dataset_id == 'sz' else 50,
-#                'initial_lr'       : 0.1 if dataset_id == 'sz' else 0.01,
-#                'final_lr'         : 0.1 if dataset_id == 'sz' else 0.01,
-#                'weight_decay'     : 0.0002 if dataset_id == 'sz' else 0.0001,
-               # 'initial_momentum' : 0.5,
-               # 'final_momentum'   : 0.9,
-               'initial_lr'       : 0.001,
-               'final_lr'         : 0.001,
-               'weight_decay'     : 0.0000001,
-               'initial_momentum' : 0.4,
-               'final_momentum'   : 0.85,
+               'initial_lr'       : 0.1 if dataset_id == 'sz' else 0.01,
+               'final_lr'         : 0.1 if dataset_id == 'sz' else 0.01,
+               'weight_decay'     : 0.0002 if dataset_id == 'sz' else 0.0001,
+               'initial_momentum' : 0.5,
+               'final_momentum'   : 0.9,
                'dropout'          : 1,
                'verbose'          : True,
                'prog_train'       : False,
@@ -132,7 +127,7 @@ plot_specs = {'path_images'   : os.getcwd() + r'/images/',
               'layers'        : len(layers) - 1,
               'epochs'        : train_specs['epochs'],
               'dropout'       : train_specs['dropout'],
-              'dataset'       : dataset_id}
+              'dataset_id'    : dataset_id}
 
 
 # TRAIN -----------------------------------------------------------------------
