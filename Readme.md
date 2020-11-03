@@ -1,6 +1,8 @@
 # Tutorial
 
-This code allows to train a Deep Belief Network with the dimensions specified by the user and according to the dataset. The whole work has been thought to support the MNIST dataset and the SZ dataset, available on [CCNL](http://ccnl.psy.unipd.it/research/deeplearning) website. 
+This code allows to train a Deep Belief Network with the dimensions specified by the user and according to the dataset. The whole work has been thought to support the MNIST dataset and the SZ dataset, available on [OSF](https://osf.io/h5pfm/) website. For the SZ dataset specifications, please refer to Testolin A, Zou WY, McClelland JL.
+Numerosity discrimination in deep neural networks: Initial competence, developmental refinement and experience statistics. Dev Sci. 2020;00:e12940. (DOI: https ://doi.org/10.1111/
+desc.12940)[https ://doi.org/10.1111/desc.12940]
 
 ## Data
 The user only needs to set the proper flags in the main script. Instructions therein.
