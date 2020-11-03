@@ -152,7 +152,7 @@ def allProfiles(schemes, algs, plot_specs, readout_range = [0.9, 0.98], cost_ran
             for run in range(runs):
                 
                 dbn = fetch(path_model + r'/{}_{}_{}_dbn{}_cd{}_ep{}{}{}.pkl'.format(
-                             plot_specs['dataset'], scheme, alg, run, 
+                             plot_specs['dataset_id'], scheme, alg, run, 
                              plot_specs['mcmc_steps'], 
                              plot_specs['epochs'],
                              dropt,
